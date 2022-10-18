@@ -1,4 +1,5 @@
-const cardContainer = document.querySelector('[data-js="card-container"]');
+import {cardContainer} from './components/card/card';
+
 const searchBarContainer = document.querySelector(
   '[data-js="search-bar-container"]',
 );
