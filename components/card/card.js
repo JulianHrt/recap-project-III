@@ -2,12 +2,13 @@ export const cardContainer = document.querySelector(
   '[data-js="card-container"]',
 );
 
-export function createCharacterCard(fetchData) {
+export function createCharacterCard(cardData) {
   const card = document.createElement('li');
-  const name = '';
-  const status = '';
-  const type = '';
-  const occurrences = '';
+  const name = cardData.name;
+  const status = cardData.status;
+  const type = cardData.type;
+  const occurrences = cardData.episode.length;
+  const image = cardData.image;
 
   card.classList.add('card');
 
